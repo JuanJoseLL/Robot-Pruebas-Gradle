@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Proyecto COLORLIB</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="cc73138444f9221952e713a02eaeeb3645f1fb5bb17b5ffb9bc550620d6d14fe.html">Verify The Validation Form</a></span>
+                > <span class="truncate-60"><a
+                    href="4324d68249ec9c19bf3501c4bde007d6982aacc0918068e61ee810d17f0a7c38.html">verify the validation form </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 25-05-2023 17:00</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Verify The Validation Form </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Me as user WANT to enter the colorlib page TO verify the validation form
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="7064a904d254e3e6a84a877a07ac32872cd5880bcb56bfae4190cc320efa913d.html">Formulariocorrecto
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="a1a3ea4878672669fd991f477f0c440e5827f143a9b9c2d028a6d28f83355513.html">Historia De Usuario
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">verify the validation form
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I enter with my credentials<br><table class='embedded'><thead><th>User</th><th>Password</th></thead><tbody><tr><td>&lt;User&gt;</td><td>&lt;Password&gt;</td></tr></tbody></table><br>When I proceed with the authentication<br>And go to the main view of the page<br>And enter submenu form validations<br>And check the title of the form on the screen<br>And fill all fields<br><table class='embedded'><thead><th>Required</th><th>Select</th><th>MultipleSelect</th><th>Url</th><th>Email</th><th>Password</th><th>ConfirmPassword</th><th>MinField</th><th>MaxField</th><th>Number</th><th>Ip</th><th>Date</th><th>DateEarlier</th></thead><tbody><tr><td>&lt;Required&gt;</td><td>&lt;Select&gt;</td><td>&lt;MultipleSelect&gt;</td><td>&lt;Url&gt;</td><td>&lt;Email&gt;</td><td>&lt;SecondPassword&gt;</td><td>&lt;ConfirmPassword&gt;</td><td>&lt;MinField&gt;</td><td>&lt;MaxField&gt;</td><td>&lt;Number&gt;</td><td>&lt;Ip&gt;</td><td>&lt;Date&gt;</td><td>&lt;DateEarlier&gt;</td></tr></tbody></table><br>And click button validate<br>Then field required will be empty</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="a98cc740457f6d0881b691ca64f7df5416316e12028472b99a28f8641e875161.png" title=" 1: verify the validation form ({User=admin, Password=SecondPassword, Required=admin, Select=admin, MultipleSelect=Tennis, Url=http://dfsdfd.com, Email=optin3@gmail.com, ConfirmPassword=&lt;SecondPassword&gt;, MinField=100345, MaxField=204324, Number=3738553, Ip=191.092.0.9, Date=2023-05-24, DateEarlier=2012/03/03})" width="2880"/>
+                <img src="a98cc740457f6d0881b691ca64f7df5416316e12028472b99a28f8641e875161.png" title=" When I proceed with the authentication" width="2880"/>
+                <img src="a98cc740457f6d0881b691ca64f7df5416316e12028472b99a28f8641e875161.png" title=" Open page" width="2880"/>
+                <img src="a98cc740457f6d0881b691ca64f7df5416316e12028472b99a28f8641e875161.png" title=" Sign in: admin, admin" width="2880"/>
+                <img src="e7f1f526e1a2e7306207b2322062ad76651cc5441f214cd2c9a924ee9acb7516.png" title=" Sign in: admin, admin" width="2880"/>
+                <img src="4b1256a008a1ec67306386a8f990ef6f90dea90c5aca861a0dbde567227a3692.png" title=" Sign in: admin, admin" width="2880"/>
+                <img src="bc032ced37cb9e50dd70ad247fd3f10e544a7e5cbe925d17857632c39e06c546.png" title=" Sign in: admin, admin" width="2880"/>
+                <img src="77cb5eec0d452be2098b2fa3553461aa9da51fb98bd74ec0ebc44dd6bdb09ff8.png" title=" Sign in: admin, admin" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" Sign in: admin, admin" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" Sign in: admin, admin (completed)" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" When I proceed with the authentication (completed)" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" And go to the main view of the page" width="2880"/>
+                <img src="1aae460c97aa2900ae61dd7fb7c64d85c0fd8c7e02f72c07ca82c091231cad7d.png" title=" And go to the main view of the page" width="2880"/>
+                <img src="1aae460c97aa2900ae61dd7fb7c64d85c0fd8c7e02f72c07ca82c091231cad7d.png" title=" And go to the main view of the page (completed)" width="2880"/>
+                <img src="1aae460c97aa2900ae61dd7fb7c64d85c0fd8c7e02f72c07ca82c091231cad7d.png" title=" And enter submenu form validations" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" And enter submenu form validations" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" And enter submenu form validations (completed)" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" And check the title of the form on the screen" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" And check the title of the form on the screen (completed)" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="bd34e20fdb3ba503fd5452c011209ea726a0d0247ec7e36ef676ea08a7be06f7.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="2c9d070d24fd24ce4e1b244f4d408adb0a49f282d62019640c4340f4f256cc75.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="0cafa257804620610a33ad327e7546253fa35d70e25903dd4095b70957ffd043.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="084d69d092f06f8758aeae27f550a523940294878f208172731931a23a78a529.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="5b6cf6aab829b37cfbe39b5259f2d1a2a5dee3086e2545527535c0183616680f.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="2a6db005d54f7a818ffcf3c02c9e06abcae257f607ad40dd9975bf8f336878f9.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="a93e69a8989ac3c92f0f73ef5908740a047ad85023b63f7ffceff25ec77f4573.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="0f8daab750ed7616e0ff619f3ef32a6fd1d2297b7557f99d31962724f604485c.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="c4858edef947b25e35747bf7e7f0d324ac02ec98c104384db89627502d57eede.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="6c356fd1eb713768e4c596edb29ee7c4dbe28bbdd68cc929a4f027a5c0a014b2.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="d693252ce9788fa3dec0f62f333bdb8a3205267ba90bb3f1edd64c2a4d54bb76.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="829537a2a87b1f2c881c827ed8830dd2a7359c3cdbc028531d037deb9a9b111c.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="a290f09eb59bb10952aa2421cdc35947b06b7b12d8a529bde0fecd4f60d1fddf.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="a5fe2f3bce2723a8e970e688402d9bef87dbc33ebc072301f6f4a0e7babb915e.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 |" width="2880"/>
+                <img src="2af07c410b4089f3b7a0a8c8c62b84c894aa1693d913f58431c4a0a7acbdf21c.png" title=" And fill all fields
+| Required | Select | MultipleSelect | Url | Email | Password | ConfirmPassword | MinField | MaxField | Number | Ip | Date | DateEarlier |
+| admin | admin | Tennis | http://dfsdfd.com | optin3@gmail.com | &lt;SecondPassword&gt; | &lt;SecondPassword&gt; | 100345 | 204324 | 3738553 | 191.092.0.9 | 2023-05-24 | 2012/03/03 | (completed)" width="2880"/>
+                <img src="2af07c410b4089f3b7a0a8c8c62b84c894aa1693d913f58431c4a0a7acbdf21c.png" title=" And click button validate" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" And click button validate" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" And click button validate (completed)" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" Then field required will be empty" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" Then field required will be empty (completed)" width="2880"/>
+                <img src="785494119b900cb2c37d33acee91b8a669beedb7bf2a69e535dfdd812efc9341.png" title=" 1: verify the validation form ({User=admin, Password=SecondPassword, Required=admin, Select=admin, MultipleSelect=Tennis, Url=http://dfsdfd.com, Email=optin3@gmail.com, ConfirmPassword=&lt;SecondPassword&gt;, MinField=100345, MaxField=204324, Number=3738553, Ip=191.092.0.9, Date=2023-05-24, DateEarlier=2012/03/03}) (completed): <span class='success-color'>SUCCESS</span>" width="2880"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.0.5</span>
+</div>
+</body>
+</html>
