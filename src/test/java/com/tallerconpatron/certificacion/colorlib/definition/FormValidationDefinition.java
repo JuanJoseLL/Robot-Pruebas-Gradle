@@ -13,6 +13,20 @@ import static org.junit.Assert.assertEquals;
 public class FormValidationDefinition extends BasePage {
     private String user;
     private String pass;
+    private String req ;
+    private String select;
+    private String multi;
+    private String url ;
+    private String email;
+    private String passF ;
+    private String confP;
+    private String minF ;
+    private String maxF ;
+    private String num ;
+    private String ip ;
+    private String date;
+    private String dateE;
+
     @Steps
     TaskAction taskAction;
     @Given("I enter with my credentials")
@@ -67,20 +81,20 @@ public class FormValidationDefinition extends BasePage {
 
     @And("fill all fields")
     public void fillAllFields(io.cucumber.datatable.DataTable dataTable) {
-            String req = dataTable.cell(1,0);
-            String select = dataTable.cell(1,1);
-            String multi = dataTable.cell(1,2);
-            String url = dataTable.cell(1,3);
-            String email = dataTable.cell(1,4);
-            String pass = dataTable.cell(1,5);
-            String confP = dataTable.cell(1,6);
-            String minF = dataTable.cell(1,7);
-            String maxF = dataTable.cell(1,8);
-            String num = dataTable.cell(1,9);
-            String ip = dataTable.cell(1,10);
-            String date = dataTable.cell(1,11);
-            String dateE = dataTable.cell(1,12);
-            taskAction.fillForm(req,select,multi,url,email,pass,confP,minF,maxF,num,ip,date,dateE);
+            this.req = dataTable.cell(1,0);
+            this.select = dataTable.cell(1,1);
+            this.multi = dataTable.cell(1,2);
+            this.url = dataTable.cell(1,3);
+            this.email = dataTable.cell(1,4);
+            this.passF = dataTable.cell(1,5);
+            this.confP = dataTable.cell(1,6);
+            this.minF = dataTable.cell(1,7);
+            this.maxF = dataTable.cell(1,8);
+            this.num = dataTable.cell(1,9);
+            this.ip = dataTable.cell(1,10);
+            this.date = dataTable.cell(1,11);
+            this.dateE = dataTable.cell(1,12);
+            taskAction.fillForm(req,select,multi,url,email,passF,confP,minF,maxF,num,ip,date,dateE);
     }
 
     @And("click button validate")
